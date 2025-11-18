@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz de Lenguajes</title>
+  <link rel="stylesheet" href="../css/quiz.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>¿A qué lenguaje pertenece este código?</h1>
+    <pre id="code-block"></pre>
+
+    <div class="options">
+      <button onclick="checkAnswer('JavaScript')">JavaScript</button>
+      <button onclick="checkAnswer('Python')">Python</button>
+      <button onclick="checkAnswer('Java')">Java</button>
+    </div>
+
+    <p id="result"></p>
+    <button onclick="loadQuestion()" id="next-btn">Siguiente</button>
+  </div>
+
+  <script src="../js/quiz.js"></script>
+</body>
+</html>
